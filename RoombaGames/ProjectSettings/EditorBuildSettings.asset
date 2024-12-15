@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/BalloonPopper.unity
+    guid: 3c3bdac512f3da3469b1d45e5f680b06
+  - enabled: 1
+    path: Assets/Scenes/CarDodge.unity
+    guid: 1fc4b9453d064534eae64428142ab85e
+  - enabled: 1
+    path: Assets/Scenes/TrashCollector.unity
+    guid: 3bc9a2db8404adf4daff53803e3f8f47
   m_configObjects: {}
