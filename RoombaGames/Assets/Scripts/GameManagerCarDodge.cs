@@ -40,7 +40,8 @@ public class GameManagerCarDodge : MonoBehaviour
 
     private void SpawnBlock() {
         Vector3 spawnPos = spawnPoint.position;
-        spawnPos.x = Random.Range(-maxX, maxX);
+        var list = new List<float> { -4.29f, -1.52f, 1.33f, 4.21f };
+        spawnPos.x = list[Random.Range(0, 3)];
         Instantiate(block, spawnPos, Quaternion.identity);
         block.SetActive(true);
         score++;
