@@ -17,7 +17,20 @@ public class PlayerTrash : MonoBehaviour {
 
     public TextMeshProUGUI highScoreText;
     // Start is called before the first frame update
+
+    public GameObject trash1;
+    public GameObject trash2;
+    public GameObject trash3;
+    public GameObject trash4;
+    public GameObject trash5;
+
     void Start() {
+        SetTrashPosition(trash1);
+        SetTrashPosition(trash2);
+        SetTrashPosition(trash3);
+        SetTrashPosition(trash4);
+        SetTrashPosition(trash5);
+
         UpdateHighScore();
         stopwatch.start();
     }
@@ -64,5 +77,12 @@ public class PlayerTrash : MonoBehaviour {
 
     void GoBackToMenu() {
         SceneManager.LoadScene("Menu");
+    }
+
+    private void SetTrashPosition(GameObject trash) {
+        Vector3 trashPos = new Vector3(0, 0, 0);
+        trashPos.x = Random.Range(-8.7f, 9.7f);
+        trashPos.y = Random.Range(-9.0f, 8.25f);
+        trash.transform.position = trashPos;
     }
 }
